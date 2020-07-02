@@ -1,0 +1,7 @@
+apiVersion: indy.commonjava.org/v1alpha1
+kind: Indy
+metadata:
+  name: example-indy
+spec:
+  # Add fields here
+  size: 3

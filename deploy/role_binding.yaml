@@ -1,0 +1,11 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: indy-operator
+subjects:
+- kind: ServiceAccount
+  name: indy-operator
+roleRef:
+  kind: Role
+  name: indy-operator
+  apiGroup: rbac.authorization.k8s.io
