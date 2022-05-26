@@ -1,0 +1,6 @@
+apiVersion: indy.commonjava.org/v1alpha1
+kind: Indy
+metadata:
+  name: indy-sample
+spec:
+  # TODO(user): Add fields here

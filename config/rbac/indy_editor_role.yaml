@@ -1,0 +1,24 @@
+# permissions for end users to edit indies.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: indy-editor-role
+rules:
+- apiGroups:
+  - indy.commonjava.org
+  resources:
+  - indies
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - indy.commonjava.org
+  resources:
+  - indies/status
+  verbs:
+  - get

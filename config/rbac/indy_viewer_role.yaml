@@ -1,0 +1,20 @@
+# permissions for end users to view indies.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: indy-viewer-role
+rules:
+- apiGroups:
+  - indy.commonjava.org
+  resources:
+  - indies
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - indy.commonjava.org
+  resources:
+  - indies/status
+  verbs:
+  - get
